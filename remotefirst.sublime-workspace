@@ -1,0 +1,669 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "\n\n```\nAnvänd putty från itadmserv02\nGå direkt på switchens ip-adress (managementnätet)\nGå in i \"enable\"\nkommando ? ger hjälp\nshow ? ger vilka saker som kan visas\nshow interfaces visar alla interface\nshow running\nshow interfaces 24 för att se allt om just det interfacet\nshow int brief \nshow vlan för att se alla vlan i switchen\nshow vlans 95 för att se vilka portar som de ligger på\nkan bara ha ett otaggat vlan per port\nwr mem för att spara\n\n\nlägga till vlan:\nconf t\n vlan 95\n untagged 24 (port#)\n\nBrocade (ingen support kvar och typ 6 år gamla)\n* här borde vi ta backuper på all brocadeswitchar \ncopy running config to tftp, solarwinds kanske kan göra detta.\n\nDet som sitter i portarna där ska alltid vara uppe (det är ju switchar eller servrar)\nAlla servrar sitter direkt in i dessa (vi har totalt 4st)\n\nDell switchar har vi på NSG för vmware och här för lagringen, de är 10G och således lite dyrare. Vi har ingen support och borde köpa in en ny switch och lägga på hyllan\n* krångligare config på dessa än på HP och Brocade.\n* inga vlan på de som står i GLA så de behöver bara slå på jumbo frames innan den kan tas i drift\n* untagged heter \"access\"\n* på den som står i NSG behöver vi bara pilla på om vi vill ha  nya vlan för vmware\n```\n\n\n\n\n",
+			"settings":
+			{
+				"buffer_size": 1244,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "spara\n\nlicenser, filservrar, klienter (Windows image), prioriteringar",
+			"settings":
+			{
+				"buffer_size": 69,
+				"line_ending": "Unix",
+				"name": "spara"
+			}
+		},
+		{
+			"contents": "Konferens\n\n1. Definera produkter, få in dem i tentakel\n2. Dela upp ansvar för produkterna på personer på IT\n3. Blir typ tre pooler: support, förvaltning (buggrättning av enkel karaktär) och generella personer tillgängliga för projekt. Bland de sistnämnda delar vi upp ansvarsområden ()",
+			"settings":
+			{
+				"buffer_size": 285,
+				"line_ending": "Unix",
+				"name": "Konferens"
+			}
+		},
+		{
+			"contents": "Fredag 2/9\n\nGå igenom switchar etc med henke\nLägg upp dashing\nRäkna på opsgenie\n\nSätt upp heartbeat opsgenie\n 1. skriptet måste kolla om zabbix lever (hur?)\n 2. skriptet ska skicka ok om så är fallet\n 3. skriptet ska skicka not_ok om zabbix inte fungerar\n 4. skriptet ska versionskontrolleras mha github\n 5. skriptet ska läggas ut på hosten mha chef\n 6. skriptet ska köras mha crontab var 11:e minut\n\nSvara på offerten och boka 9/9\nAckningen verkar inte fungera helt\nSNMP på lagringen.\n\n",
+			"settings":
+			{
+				"buffer_size": 487,
+				"line_ending": "Unix",
+				"name": "Fredag 2/9"
+			}
+		},
+		{
+			"contents": "Torsdag\n\nkolla med mathias om: backuper, väg framåt, - DONE\ngör klart choose stuff - DONE\nskriv vilka ipn vi har -DONE\nskriv ihop material, ca en a4 till fredrik - DONE\nskriv protokollet för arkitektmötet - DONE\n\nkolla med christian om heartbeat. \nTTCustomerNewsFeed fixa larm på det.\nkan vi göra mer av Confluence?\n\n\nMåndag:\n* Lösenordsåterställning, finns något vi kan förenkla i rutinen?\n* Varför kan vi inte inte vmotion mellan hallarna\n* Hur backar vi videoarkivet\n* Kontakt på Dell från Janne\n\nFredag:\n\nfortsätt sätta upp confluence genom att nu lägga in en användare som confluence kan använda och sen sätta upp jdbc connection från den nya confluenceservern.\n* Vad göra med DNS?\n\n\n\nIPn AWS\n52.48.42.93 - molnet01 \n52.50.182.2 - NATgw (skicka till kund som officellt TT ip)\n52.208.142.123 - gate02\n52.210.39.132 - NATgw (skicka till kund som officellt TT ip)\n52.210.108.49 - kampanj01 (skicka till kund som officellt TT ip)\n",
+			"file": "/home/os/Documents/torsdag.txt",
+			"file_size": 933,
+			"file_write_time": 131181658294340521,
+			"settings":
+			{
+				"buffer_size": 931,
+				"line_ending": "Unix",
+				"name": "Tisdag:"
+			}
+		},
+		{
+			"file": "lib/js/blarg.js",
+			"settings":
+			{
+				"buffer_size": 838,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/css/blarg.css",
+			"settings":
+			{
+				"buffer_size": 3022,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index2.html",
+			"settings":
+			{
+				"buffer_size": 1114,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<head>\n  <meta charset='utf-8' />\n  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />\n  <title>Remotefirst</title>\n  <link rel=\"stylesheet\" href=\"lib/css/blarg.css\" type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n  <script src=\"lib/js/blarg.js\" type=\"text/javascript\"></script>		 \n</head>\n\n<body>\n  <h1>\n  \n  </body>\n",
+			"file": "index_submit",
+			"file_size": 327,
+			"file_write_time": 131185964700058792,
+			"settings":
+			{
+				"buffer_size": 334,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/os/Downloads/src/arkitekt/anteckningar/2016/0906/arkitekt_20160906_protokoll.md",
+			"settings":
+			{
+				"buffer_size": 1862,
+				"line_ending": "Unix",
+				"name": "##"
+			}
+		},
+		{
+			"contents": "# 2016-08-03\n\n## Närvarande\n\nPeter Johansson (PJ), Johan Lindgren (JL),\nMartin Algesten (MA), Olle Simasgård (OS)\n\n\n### Val av sekreterare\n\nPeter Johansson\n\n## Val av ordförande\n\nMartin Algesten\n\n## Uppföljning\n\n### Byline i TTNINJS (JL)\n\nTTNINJS-ändringen antogs redan under förra mötet (060811). Nu beslutar vi att NEWSML-varianten för bylines i TTNNINJS ska följa IPTC-standard och använder sig av `<CREATOR>` för varje rad i `ttninjs.bylines`.\n\n### Toolboxleverans i TTNINJS (PJ)\n\nMötet bestämde att prio-ordning för implementation, som efterfrågades vid förra mötet, inte är en Arkitektgruppsfråga. Istället ska **PJ** och **JL** ta fram förslag på att utöka bodyhtml5 för stödja respektive Toolboxleverans.\n\n### HTML5-schema (JL)\n\nVi ska dra in dom sista delarna och sätta ett datum för implementation av ändring i vårt HTML5-format. Inga ändringar kommer ske före utsatt datum, men fr.o.m. det datumet måste kunderna vara beredda på att vi ändrar. Dokument som leverats på i det gamla formatet skriver vi inte om. Mötet spikade inget datum.\n\nBildfilsnamn utreds efter mötet.\n\n### Haveriet i juni\n\nVi har inte fått någon invändning mot katastrofdirektivsdokumentet så vi jobbar vidare på inslagen väg. Det arkitektruppen är intresserade av nu är inte att detaljstyra, utan att direktivet jobbas ut på IT-avdelningen och att fördjupning och implementation distribueras inom gruppen.\n\nSom komplement till den mer systemcentrerade plan som kommer från arkitektgruppen efterfrågas en lista och prioritering på en högre produktnivå. Trots svårigheter vid tidigare försök, tror vi detta är en bra idé. Denna kan användas för att mappa mot vår mikrotjänstmiljö där fler tjänster återfinns inom flera produkter. Den kan även förenkla kommunikation med övrig verksamhet osv.\n\nDetta ligger inte (och bör inte ligga) på arkitegruppens bord. Utan bör snarare komma från redaktionellt och affärsutvecklingshåll. Kanske via produktägarforum och IT-råd.\n\n**MA** tar vidare direktivet till Vicktor och Janne.\n**OS** börjar jobba med planen inom drift-teamet där mycket av det praktiska utförandet kommer ske.\n\nDetaljbeslut: Vi ändrar formuleringen **3-4 timmar** till **max 4 timmar**.\n\n### Sektionsinfo (MA)\n\nVi beslutar att **sektioner** (Inrikes, Utrikes osv) läggs som ett eget fält på rotnivå i TTNINJS.   \n\n## Nya ärenden\n\n### Push-API\n\nPrioritera in i sprintjobb att utöka leveranskanalerna med stöd  för **web sockets**.\n\n### End points\n\nVi behöver hjälp av Vicktor för att utreda viss begreppsförvirring kring vad **end points** i det här sammanhanget innebär.\n\n\n## Beslut\n\n### Byline i TTNINJS\n* NEWSML-varianten för bylines i TTNNINJS ska följa IPTC-standard och använder sig av `<CREATOR>` för varje rad i `ttninjs.bylines`.\n\n### HTML5-schema\n\n* Dokument som leverats på i det gamla formatet skriver vi inte om.\n\n## Nästa möte\n\nMåndag 2016-09-06\n",
+			"file": "/home/os/Downloads/src/arkitekt/anteckningar/2016/0823/arkitekt_20160811_protokoll.md",
+			"file_size": 2950,
+			"file_write_time": 131176290530264040,
+			"settings":
+			{
+				"buffer_size": 2848,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "I början av varje månad (innan 5-6):\n\n1. Gå in i medvind och tryck \"arbetsledare\"\n2. Välj rätt period och Enheten IT-Avd.\n3. Tryck \"Planering\" (de som har vita rader har ännu inte klarmarkerat sig = skäll på dem)\n4. Tryck \"hantera ledighetsansökningar\" och godkänn periodens ledighetsansökningar\n5. Välj sedan \"attestera\", och börja med att godkänna (den mellersta pluppen)\n6. När du godkänt alla så välj attestera och gör även så med alla \n\n\n",
+			"file": "/home/os/Documents/Medvind.txt",
+			"file_size": 461,
+			"file_write_time": 131175480775762201,
+			"settings":
+			{
+				"buffer_size": 443,
+				"line_ending": "Unix",
+				"name": "I början av varje månad (innan 5-6):"
+			}
+		},
+		{
+			"contents": "curl -XPOST 'https://api.opsgenie.com/v1/json/heartbeat' -d '\n{\n     \"apiKey\": \"b4cc4d8c-6d92-4647-afd3-b93e3b3413c4\",\n     \"name\" : \"Zabbix_blarfg_Alive\",\n     \"description\": \"Zabbix server sending heartbeat to opsgenie\",\n     \"interval\": 11,\n     \"intervalUnit\": \"minutes\",\n     \"enabled\" : true\n}'\n\ncurl -XPOST 'https://api.opsgenie.com/v1/json/heartbeat/send' -d '\n{\n     \"apiKey\": \"b4cc4d8c-6d92-4647-afd3-b93e3b3413c4\",\n     \"name\" : \"Zabbix_is_Alive\"\n}'\n\ncurl -XDELETE 'https://api.opsgenie.com/v1/json/heartbeat?apiKey=b4cc4d8c-6d92-4647-afd3-b93e3b3413c4&name=Zabbix_is_Alive'\n",
+			"settings":
+			{
+				"buffer_size": 586,
+				"line_ending": "Unix",
+				"name": "curl -XPOST 'https://api.opsgenie.com/v1/json/hear"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/os/Desktop/overvakning.txt",
+		"/home/os/%F"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"x",
+			"\\n\\*",
+			"\\n",
+			""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"****"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 69,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								69,
+								69
+							]
+						],
+						"settings":
+						{
+							"auto_name": "spara",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								184,
+								184
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Konferens",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 487,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								401,
+								401
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Fredag 2/9",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/os/Documents/torsdag.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 931,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								687,
+								687
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Tisdag:",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "lib/js/blarg.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 838,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "lib/css/blarg.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3022,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "index2.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1114,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "index_submit",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 334,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								323,
+								323
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/home/os/Downloads/src/arkitekt/anteckningar/2016/0906/arkitekt_20160906_protokoll.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1862,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1705,
+								1705
+							]
+						],
+						"settings":
+						{
+							"auto_name": "##",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/home/os/Downloads/src/arkitekt/anteckningar/2016/0823/arkitekt_20160811_protokoll.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2848,
+								2848
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1386.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/home/os/Documents/Medvind.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 443,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								443,
+								443
+							]
+						],
+						"settings":
+						{
+							"auto_name": "I början av varje månad (innan 5-6):",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 586,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "curl -XPOST 'https://api.opsgenie.com/v1/json/hear",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "remotefirst.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
