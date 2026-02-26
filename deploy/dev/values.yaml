@@ -1,0 +1,5 @@
+ollestest:
+  enabled: true
+  environment: dev
+  cluster: anakin
+  
