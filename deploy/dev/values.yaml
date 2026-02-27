@@ -1,4 +1,4 @@
-ollestest:
+kar-app-ollestest:
   enabled: true
   environment: dev
   cluster: anakin

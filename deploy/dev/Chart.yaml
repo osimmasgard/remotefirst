@@ -1,0 +1,10 @@
+apiVersion: v2
+name: kar-app-ollestest
+version: 0.0.1
+description: Helm chart for kar-app-ollestest
+
+dependencies:
+- name: deployment
+  version: 0.0.5
+  repository: oci://artifactory.kim.karolinska.se/helmoci/kim-helm-charts
+ 
